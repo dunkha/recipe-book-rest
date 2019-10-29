@@ -1,0 +1,53 @@
+[
+  {
+    "name": "Kookoscurry",
+    "description": "Kookospohjainen curry-ruoka, jonka proteiinina voidaan käyttää esim. tofua tai katkarapuja.",
+    "ingredients": [
+      {
+        "name": "kookosmaito",
+        "measurementType": "CAN",
+        "measurement": 1
+      },
+      {
+        "name": "chili",
+        "measurementType": "COUNT",
+        "measurement": 2
+      }
+    ],
+    "workSteps": [
+      {
+        "orderNum": 1,
+        "description": "Silppua sipuli, valkosipuli ja chili."
+      },
+      {
+        "orderNum": 2,
+        "description": "Kuullota sipulit ja chilit pannulla sekä lisää mausteet."
+      },
+      {
+        "orderNum": 3,
+        "description": "Kuutioi kasvikset ja siitakesienet sipulien kuullottuessa."
+      }
+    ]
+  },
+  {
+    "name": "Bibimbap",
+    "description": "Korealainen pyttipannu. Riisiä johon sekoitetaan mm. ituja, seesaminsiemeniä ja siitakesieniä. Kaiken kruunaa savuinen chilitahna ja kananmuna.",
+    "ingredients": [
+      {
+        "name": "riisi",
+        "measurementType": "PORTION",
+        "measurement": 4
+      }
+    ],
+    "workSteps": [
+      {
+        "orderNum": 1,
+        "description": "Kuutioi/silppua kaikki tarvittavat vihannekset ja tofu."
+      },
+      {
+        "orderNum": 2,
+        "description": "Paista kananmuna niin, että keltuainen jää vielä raa-aksi ja lisää kananmuna jokaisen kulhoon pinnalle."
+      }
+    ]
+  }
+]
