@@ -22,7 +22,7 @@ public class RecipeBookController {
         return repository.findAll();
     }
 
-    @RequestMapping(value = "/test", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/reset", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public @ResponseBody List<Recipe> genereateTestRecipes() {
         repository.deleteAll();
 
@@ -46,6 +46,12 @@ public class RecipeBookController {
 
     @PostMapping(value="/updateRecipe", consumes = "application/json", produces = "application/json")
     public Recipe updateRecipe(@RequestBody Recipe recipe) {
+        System.out.println("Hop!");
         return repository.save(recipe);
+    }
+
+    @RequestMapping(value = "/delete/{id}", method = RequestMethod.DELETE)
+    public void delete(@PathVariable("id") String id) {
+        repository.deleteById(id);
     }
 }
